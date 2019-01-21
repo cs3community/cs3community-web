@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article>
+	<p class="title is-6">{{.Title}}</p>
+	<p class="subtitle is-6">{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
+	{{ $taxo := "tags" }}
+	{{ range .Param $taxo }}
+	{{ $name := . }}
+	{{ with $.Site.GetPage (printf "/%s/%s" $taxo $name) }}
+	<span>
+		<a href="{{ .Permalink }}"><span class="tag is-danger">{{ $name }}</span></a>
+	</span>
+	{{ end }}
+	{{ end }}
+	<hr/>
+	<div>
+		{{ .Content }}
+	</div>
+</article>
+{{ end }}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	{{- partial "head.html" . -}}
+	<body class="Site">
+		{{- partial "header.html" . -}}
+		<div class="is-clearfix"></div>
+		<div class="Site-content">
+		<div class="section">
+		<div class="container">
+		{{- block "main" . }}{{- end }}
+		</div>
+		</div>
+		</div>
+		{{- partial "footer.html" . -}}
+	</body>
+</html>

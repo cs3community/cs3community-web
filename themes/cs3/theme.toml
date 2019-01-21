@@ -1,0 +1,12 @@
+name = "cs3"
+license = "MIT"
+licenselink = "https://github.com/cs3community/cs3community-web/blob/master/LICENSE"
+description = "Theme for CS3 Community based on Bulma CSS Framework"
+homepage = "https://cs3community.org"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Hugo Gonzalez Labrador"
+  homepage = "www.labkode.com"
