@@ -8,8 +8,8 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 rm -rf public
 git clone https://github.com/cs3community/cs3community.github.io public
 hugo -t cs3
+cp CNAME public
 cd public
-git diff
 
 # Commit changes.
 msg="rebuilding site `date`"
