@@ -1,4 +1,4 @@
-baseURL = "http://cs3community.org"
+baseURL = "http://www.cs3community.org"
 languageCode = "en-us"
 title = "CS3 Community"
 theme = "cs3"
